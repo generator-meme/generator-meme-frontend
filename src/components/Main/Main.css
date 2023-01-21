@@ -1,0 +1,47 @@
+.main {
+  padding: 140px 135px;
+}
+
+.main__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 95px;
+  margin-bottom: 80px;
+}
+
+.main__text-box {
+  display: flex;
+}
+
+.main__text-advice {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 50px;
+  margin: 0 30px 0 0;
+}
+
+.main__btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  background: linear-gradient(
+    180deg,
+    #ce8ec0 0%,
+    rgba(194, 139, 228, 0.63) 77.16%
+  );
+  border-radius: 20px;
+  height: 64px;
+}
+
+.main__memebox {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 360px);
+  grid-template-columns: repeat(auto-fill, 360px);
+  margin-top: 125px;
+  justify-content: center;
+  gap: 60px 40px;
+}
