@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import './App.css'
 
 const CatMeme = () => {
   const [image, setImage] = useState(null)
@@ -17,8 +16,7 @@ const CatMeme = () => {
     if (image && canvas) {
       const ctx = canvas.current.getContext('2d')
       ctx.fillStyle = 'black'
-      ctx.fillRect(0, 0, 600, 456 + 80)
-      //x.fillRect(x, y, шир, высота)
+      ctx.fillRect(0, 0, 400, 256 + 80)
       ctx.drawImage(image, (400 - 256) / 2, 40)
 
       ctx.font = '20px Comic Sans MS'
@@ -35,7 +33,7 @@ const CatMeme = () => {
       <h1>Cat Meme!</h1>
 
       <div>
-        <canvas ref={canvas} width={1000} height={800} className={'cat'} />
+        <canvas ref={canvas} width={400} height={256 + 80} />
       </div>
 
       <div>
