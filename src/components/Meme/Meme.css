@@ -3,6 +3,7 @@
   width: 360px;
   border-radius: 20px;
   display: flex;
+  justify-content: center;
 }
 
 .meme__create-btn {
@@ -15,4 +16,5 @@
   border-radius: 8px;
   box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.64);
   margin: 275px auto 0;
+  cursor: pointer;
 }

@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom'
 import './Meme.css'
 
 const Meme = ({ image }) => {
   return (
     <div className="meme" style={{ backgroundImage: `url(${image})` }}>
-      <button className="meme__create-btn">Создать мем</button>
+      <Link to="/generator-meme-frontend/edit">
+        <button className="meme__create-btn">Создать мем</button>
+      </Link>
     </div>
   )
 }
