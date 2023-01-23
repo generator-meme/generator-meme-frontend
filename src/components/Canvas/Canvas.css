@@ -2,6 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 55px 30px;
 }
 
 .editor__image-box {
@@ -14,16 +15,22 @@
 .editor__title {
   margin-top: 50px;
   margin: 50px 0 40px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 71px;
 }
 
 .editor__image {
   font-weight: 500;
   font-size: 70px;
   line-height: 83px;
+  border-radius: 20px;
+  white-space: pre-wrap;
+  word-break:break-all
 }
 
 .editor__canvas {
-  height: 500px;
+  /* height: 500px; */
   width: 500px;
 }
 
@@ -33,12 +40,9 @@
 .editor__text-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   max-height: 290px;
+  gap: 60px;
   align-items: center;
   margin: auto;
 }
@@ -51,4 +55,8 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 47px;
+  padding: 20px 10px;
+}
+.editor__color {
+  margin-bottom: 20px;
 }

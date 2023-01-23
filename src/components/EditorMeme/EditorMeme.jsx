@@ -10,25 +10,25 @@ const EditorMeme = () => {
   const [textBottom, setTextBottom] = useState(false);
 
   return (
-    <div className="editor">
-      <Link to="/generator-meme-frontend/" className="editor__link">
+    <div className="editor-meme">
+      <Link to="/generator-meme-frontend/" className="editor-meme__link">
         <img src={back} alt="Назад" />
       </Link>
-      <h2 className="editor__title">Редактор мемов</h2>
-      <section className="editor__hero">
-        <div className="editor__column_left">
+      <h2 className="editor-meme__title">Редактор мемов</h2>
+      <section className="editor-meme__hero">
+        <div className="editor-meme__column_left">
           {textTop && <input className="editor__input editor__input_top" type="text" />}
           {textBottom && <input className="editor__input editor__input_bottom" type="text" />}      
-          <img src={meme} alt="Мем" className="editor__image" />
+          <img src={meme} alt="Мем" className="editor-meme__image" />
         </div>
-        <div className="editor__column_right">
-          <button className="editor__button editor__button_top"
+        <div className="editor-meme__column_right">
+          <button className="editor-meme__button editor-meme__button_top"
             type="button"
             onClick={() => setTextTop(!textTop)}>
             Текст сверху
           </button>
           <button
-            className="editor__button editor__button_bottom"
+            className="editor-meme__button editor-meme__button_bottom"
             type="button"
             onClick={() => setTextBottom(!textBottom)}>
             Текст снизу

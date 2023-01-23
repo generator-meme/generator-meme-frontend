@@ -9,6 +9,7 @@ const Canvas = () => {
   const canvas = useRef(null)
   const [topText, setTopText] = useState('')
   const [bottomText, setBottomText] = useState('')
+  const [color, setColor] = useState(null)
 
   useEffect(() => {
     const memeImage = new Image()
@@ -16,6 +17,9 @@ const Canvas = () => {
     memeImage.onload = () => setImage(memeImage)
   }, [])
 
+  const fillStyle = (color) => {
+    setColor(color.target.value);
+  }
   useEffect(() => {
     if (image && canvas) {
       const ctx = canvas.current.getContext('2d')
@@ -23,13 +27,13 @@ const Canvas = () => {
       ctx.drawImage(image, 0, 0)
 
       ctx.font = '70px Comic Sans MS'
-      ctx.fillStyle = 'white'
+      ctx.fillStyle = color
       ctx.textAlign = 'center'
 
       ctx.fillText(topText, 250, 100)
       ctx.fillText(bottomText, 250, 550)
     }
-  }, [image, canvas, topText, bottomText])
+  }, [image, canvas, topText, bottomText, fillStyle])
 
   const [windowSize, setWindowSize] = useState({
     winWidth: window.innerWidth,
@@ -61,6 +65,7 @@ const Canvas = () => {
         </Link>
         <h1 className="editor__title">Редактор мемов</h1>
         <div className="editor__canvas">
+        <input type="color" onChange={e => fillStyle(e)} className="editor__color" />
           <canvas
             className="editor__image"
             ref={canvas}

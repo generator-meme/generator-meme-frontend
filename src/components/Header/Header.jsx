@@ -1,10 +1,13 @@
 import logo from '../../images/logo.png'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <div className="header">
-      <img className="header__logo" src={logo} alt="logo" />
+      <Link to="/generator-meme-frontend">
+        <img className="header__logo" src={logo} alt="logo" />
+      </Link>    
     </div>
   )
 }
