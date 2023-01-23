@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/generator-meme-frontend/static/css/main.3d1a11d5.css",
-    "main.js": "/generator-meme-frontend/static/js/main.6e8c7ac7.js",
+    "main.css": "/generator-meme-frontend/static/css/main.6ecc7cab.css",
+    "main.js": "/generator-meme-frontend/static/js/main.d0aea7b5.js",
     "static/media/meme-edit.jpg": "/generator-meme-frontend/static/media/meme-edit.58940ee7da533f545f2e.jpg",
     "static/media/meme-image.png": "/generator-meme-frontend/static/media/meme-image.9926c1dc749c43f61501.png",
     "static/media/human.png": "/generator-meme-frontend/static/media/human.814376658f29cb75eb67.png",
     "static/media/help.png": "/generator-meme-frontend/static/media/help.75d78057d62edebd3fb2.png",
     "index.html": "/generator-meme-frontend/index.html",
-    "static/media/back.svg": "/generator-meme-frontend/static/media/back.9ad82463a01ff0074f274d36af3585a9.svg",
-    "main.3d1a11d5.css.map": "/generator-meme-frontend/static/css/main.3d1a11d5.css.map",
-    "main.6e8c7ac7.js.map": "/generator-meme-frontend/static/js/main.6e8c7ac7.js.map"
+    "static/media/back.svg": "/generator-meme-frontend/static/media/back.24a75da0216eeaab472cf559a4a91dc8.svg",
+    "main.6ecc7cab.css.map": "/generator-meme-frontend/static/css/main.6ecc7cab.css.map",
+    "main.d0aea7b5.js.map": "/generator-meme-frontend/static/js/main.d0aea7b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d1a11d5.css",
-    "static/js/main.6e8c7ac7.js"
+    "static/css/main.6ecc7cab.css",
+    "static/js/main.d0aea7b5.js"
   ]
 }
